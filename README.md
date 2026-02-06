@@ -17,7 +17,7 @@ Containerization-and-DevOps
 │  
 ├── Experiment 1  
 │   └── Docker Basics and Setup  
-│   → [Open exp1](./exp1)  
+│   → [Open exp1](exp1/exp1.html)  
 │  
 ├── Experiment 2  
 │   └── Docker Installation and Running Containers  
