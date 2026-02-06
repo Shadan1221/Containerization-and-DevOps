@@ -14,6 +14,10 @@ To understand and compare the working of **Virtual Machines** and **Containers**
 vagrant --version
 ```
 
+![Vagrant Version](screenshot/img1.jpeg)
+
+*Figure 1: Verification of Vagrant installation on host machine.*
+
 ### Step 2: Create Project Directory
 
 ```bash
@@ -33,6 +37,10 @@ vagrant init ubuntu/jammy64
 vagrant up
 ```
 
+![Vagrant Up](screenshot/img2.jpeg)
+
+*Figure 2: Successful initialization and startup of Ubuntu VM using Vagrant.*
+
 ### Step 5: Access the VM
 
 ```bash
@@ -48,6 +56,10 @@ curl localhost
 ```
 
 **Output:** The default *Welcome to nginx!* HTML page is displayed, confirming that the web server is running successfully inside the virtual machine.
+
+![Nginx VM](screenshot/img3.jpeg)
+
+*Figure 3: Output confirming Nginx web server running inside the virtual machine.*
 
 ### Step 7: Stop and Destroy the VM
 
@@ -72,6 +84,10 @@ docker --version
 ```bash
 docker run -d -p 8080:80 nginx
 ```
+
+![Docker Nginx 8080](screenshot/img4.png)
+
+*Figure 4: Nginx web server deployed using Docker container on port 8080.*
 
 ### Step 3: Verify Nginx Container
 
@@ -119,35 +135,6 @@ docker rmi nginx
 | Resource Usage | High (RAM & CPU)  | Low (Lightweight)     |
 | Isolation      | Strong (OS-level) | Process-level         |
 | Deployment     | Heavy             | Lightweight           |
-
----
-
-## Screenshots
-
-### 1. Vagrant Version Check
-
-![Vagrant Version](screenshot/img1.jpeg)
-
-*Figure 1: Verification of Vagrant installation on host machine.*
-
-### 2. Vagrant Virtual Machine Startup
-
-![Vagrant Up](screenshot/img2.jpeg)
-
-*Figure 2: Successful initialization and startup of Ubuntu VM using Vagrant.*
-
-### 3. Nginx Running Inside Virtual Machine
-
-![Nginx VM](screenshot/img3.jpeg)
-
-*Figure 3: Output confirming Nginx web server running inside the virtual machine.*
-
-### 4. Nginx Running Inside Docker Container (Port 8080)
-
-![Docker Nginx 8080](screenshot/docker-nginx-8080.jpeg)
-
-*Figure 4: Nginx web server deployed using Docker container on port 8080.*
-
 
 ---
 

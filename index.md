@@ -40,6 +40,10 @@ docker run -d -p 8081:80 nginx
 * `-p 8081:80` maps host port 8081 to container port 80  
 * `nginx` is the Docker image name  
 
+![Docker Run](screenshot/img1.png)
+
+*Figure 1: Running Nginx container using Docker run command.*
+
 ---
 
 ## Step 4: List Running Containers
@@ -50,6 +54,10 @@ docker ps
 
 **Output:**  
 Displays container ID, image name, status, ports, and container name.
+
+![Docker PS](screenshot/img2.png)
+
+*Figure 2: Output of `docker ps` command.*
 
 ---
 
@@ -64,6 +72,10 @@ http://localhost:8081
 **Output:**  
 The default *Welcome to nginx!* page is displayed.
 
+![Nginx Browser](screenshot/img3.png)
+
+*Figure 3: Nginx welcome page accessed via browser.*
+
 ---
 
 ## Step 6: Stop a Running Container
@@ -72,6 +84,10 @@ The default *Welcome to nginx!* page is displayed.
 docker stop <container_id>
 ```
 
+![Docker Stop](screenshot/img4.png)
+
+*Figure 4: Stopping Docker container.*
+
 ---
 
 ## Step 7: Remove a Container
@@ -79,6 +95,10 @@ docker stop <container_id>
 ```bash
 docker rm <container_id>
 ```
+
+![Docker Remove](screenshot/img5.png)
+
+*Figure 5: Removing Docker container.*
 
 ---
 
@@ -101,43 +121,6 @@ docker ps -a
 | Container Control | Easy using Docker CLI |
 
 ---
-
-## Screenshots
-
-
-### 1. Running Nginx Container
-
-![Docker Run](screenshots/img1.png)
-
-*Figure 1: Running Nginx container using Docker run command.*
-
----
-
-### 2. Listing Running Containers
-
-![Docker PS](screenshots/img2.png)
-
-*Figure 2: Output of `docker ps` command.*
-
----
-
-### 3. Nginx Running in Browser
-
-![Nginx Browser](screenshots/img3.png)
-
-*Figure 3: Nginx welcome page accessed via browser.*
-
----
-
-### 4. Stopping and Removing Container
-
-![Docker Stop](screenshots/img4.png)
-![Docker Remove](screenshots/img5.png)
-
-*Figure 4: Stopping and removing Docker container.*
-
----
-
 
 ## Result
 
